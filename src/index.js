@@ -1,9 +1,5 @@
-var exports = [8,3,5,67,21,24,7,0,-756];
-var Min = 0;
-var Max = 0;
-var sum = 0;
-
 exports.min = function min (array) {
+    var Min = 0;
     Min = array[0];
     for(var i = 1; i<array.length; i++) 
     {
@@ -12,12 +8,12 @@ exports.min = function min (array) {
             Min = array[i];
         }
     }
-    alert(Min);
-    return 0;
+    return Min;
   }
 
 
 exports.max = function max (array) {
+    var Max = 0;
     for(var i = 0; i<array.length; i++)
     {
         if(array[i]>array[i+1] && array[i] > Max)
@@ -25,22 +21,14 @@ exports.max = function max (array) {
             Max = array[i];
         }
     }
-    alert(Max);
-    return 0;
+    return Max;
   }
   
 exports.avg = function avg (array) {
+    var sum = 0;
     for(i=0;i<array.length;i++){
         sum = array[i] + sum;
       }
-    if(sum != 0) {
     sum = sum/array.length;
-    alert(sum);
-    }
-    else
-    return 0;
+    return sum;
   }
-  
-  exports.min (exports);
-  exports.max (exports);
-  exports.avg (exports);
