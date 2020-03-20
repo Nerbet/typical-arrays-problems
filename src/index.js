@@ -2,7 +2,7 @@ exports.min = function min (array)
 {
     var Min = 0;
     Min = array[0];
-    if(Min==0 || array == [])
+    if(array == [])
     {return 0;}
     else
     {
