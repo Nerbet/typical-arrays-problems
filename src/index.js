@@ -2,7 +2,7 @@ exports.min = function min (array)
 {
     var Min = 0;
     Min = array[0];
-    if(Array.isArray(emptyArray) && emptyArray.length)
+    if(Array.isArray(array) && array.length)
     {
     for(var i = 1; i<array.length; i++) 
     {
@@ -24,7 +24,7 @@ exports.min = function min (array)
 
 exports.max = function max (array) {
     var Max = 0;
-    if(Array.isArray(emptyArray) && emptyArray.length)
+    if(Array.isArray(array) && array.length)
     {
     for(var i = 0; i<array.length; i++)
     {
@@ -43,7 +43,7 @@ exports.max = function max (array) {
   }
   
 exports.avg = function avg (array) {
-    if(Array.isArray(emptyArray) && emptyArray.length)
+    if(Array.isArray(array) && array.length)
     {
     var sum = 0;
     for(i=0;i<array.length;i++){
