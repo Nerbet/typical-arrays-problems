@@ -4,12 +4,12 @@ var Max = 0;
 var sum = 0;
 
 exports.min = function min (array) {
-    Min = exports[0];
-    for(var i = 1; i<exports.length; i++) 
+    Min = array[0];
+    for(var i = 1; i<array.length; i++) 
     {
-        if(exports[i]<Min)
+        if(array[i]<Min)
         {
-            Min = exports[i];
+            Min = array[i];
         }
     }
     alert(Min);
@@ -18,11 +18,11 @@ exports.min = function min (array) {
 
 
 exports.max = function max (array) {
-    for(var i = 0; i<exports.length; i++)
+    for(var i = 0; i<array.length; i++)
     {
-        if(exports[i]>exports[i+1] && exports[i] > Max)
+        if(array[i]>array[i+1] && array[i] > Max)
         {
-            Max = exports[i];
+            Max = array[i];
         }
     }
     alert(Max);
@@ -30,15 +30,17 @@ exports.max = function max (array) {
   }
   
 exports.avg = function avg (array) {
-    for(i=0;i<exports.length;i++){
-        sum = exports[i] + sum;
+    for(i=0;i<array.length;i++){
+        sum = array[i] + sum;
       }
-    sum = sum/exports.length;
+    if(sum != 0) {
+    sum = sum/array.length;
     alert(sum);
+    }
+    else
     return 0;
   }
   
-  exports.min ();
-  exports.max ();
-  exports.avg ();
-  
+  exports.min (exports);
+  exports.max (exports);
+  exports.avg (exports);
