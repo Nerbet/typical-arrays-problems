@@ -2,7 +2,7 @@ exports.min = function min (array)
 {
     var Min = 0;
     Min = array[0];
-    if(array == [])
+    if(Min==0 || array == [])
     {return 0;}
     else
     {
@@ -33,22 +33,22 @@ exports.max = function max (array) {
             Max = array[i];
         }
     }
-    alert(Max);
     return Max;
     }
   }
   
 exports.avg = function avg (array) {
     if(array == [])
-    {return 0;}
+    {
+        return 0;
+    }
     else
     {
     var sum = 0;
     for(i=0;i<array.length;i++){
-        sum = sum + array[i];
+        sum = array[i] + sum;
       }
     sum = sum/array.length;
-    alert(sum);
     return sum;
     }
   }
