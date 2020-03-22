@@ -21,10 +21,10 @@ exports.max = function max (array) {
     {
         return 0;
     }
-    var Max;
+    var Max=array[0];
     for(var i = 0; i<array.length; i++)
     {
-        if(array[i]>array[i+1] && array[i] > Max)
+        if(array[i] > Max)
         {
             Max = array[i];
         }
