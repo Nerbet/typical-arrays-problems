@@ -4,7 +4,7 @@ exports.min = function min (array)
     {
         return 0;
     }
-    var Min = 0;
+    var Min;
     Min = array[0];
     for(var i = 1; i<array.length; i++) 
     {
@@ -14,7 +14,6 @@ exports.min = function min (array)
         }
         
     }
-    alert(Min);
     return Min;
 }
 exports.max = function max (array) {
@@ -22,7 +21,7 @@ exports.max = function max (array) {
     {
         return 0;
     }
-    var Max = 0;
+    var Max;
     for(var i = 0; i<array.length; i++)
     {
         if(array[i]>array[i+1] && array[i] > Max)
